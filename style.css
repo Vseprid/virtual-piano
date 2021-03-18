@@ -118,6 +118,11 @@ body {
 	pointer-events: auto;
 	transform-origin: center top;
 }
+
+.active {
+	background-color: blueviolet;
+}
+
 .piano-key.piano-key-active,
 .piano-key.sharp.piano-key-active {
 	transform: scale(0.96);
