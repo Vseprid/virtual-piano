@@ -119,14 +119,11 @@ body {
 	transform-origin: center top;
 }
 
-.active {
-	background-color: blueviolet;
-}
-
 .piano-key.piano-key-active,
 .piano-key.sharp.piano-key-active {
-	transform: scale(0.96);
+	transform: scale(0.94);
 }
+
 .piano-key.none {
 	background-color: transparent;
 	border: 0;
@@ -159,15 +156,20 @@ body {
 .sharp:active {
 	border-top: 0;
 }
-
+.piano-key-active:hover::after,
+.piano-key-active:hover::before,
+.piano-key-active::after,
+.piano-key-active::before {
+	color: #00b4a4;
+}
 .piano-key.sharp::before,
 .piano-key.sharp::after {
 	bottom: 175px;
 	left: 7px;
 }
-.piano-key.letter::before {
+/* .piano-key.letter::before {
 	display: none;
-}
+} */
 .piano-key.letter::after {
 	display: block;
 }
@@ -179,12 +181,6 @@ body {
 	color: #a2abb3;
 }
 
-.piano-key-active-pseudo:hover::after,
-.piano-key-active-pseudo:hover::before,
-.piano-key-active::after,
-.piano-key-active::before {
-	color: #00b4a4;
-}
 
 .fullscreen {
 	position: fixed;
